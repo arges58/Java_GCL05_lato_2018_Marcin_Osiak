@@ -42,40 +42,40 @@ public class CustomCalculator implements Calculator {
 
         boolean stop = true;
         while (stop) {
-            System.out.println("1. Dodawanie");
-            System.out.println("2. Odejmowanie");
-            System.out.println("3. Mnozenie");
-            System.out.println("4. Dzielenie");
-            System.out.println("5. Potegowanie");
-            System.out.println("6. Wyjdz");
+            System.out.println("1. Adding");
+            System.out.println("2. Substracting");
+            System.out.println("3. Multiplying");
+            System.out.println("4. Dividing");
+            System.out.println("5. Powering");
+            System.out.println("6. Exit");
             choice = read.nextInt();
             switch (choice) {
                 case 1:
-                    System.out.println("Podaj dwie liczby: ");
+                    System.out.println("Type two numbers: ");
                     x = read1.nextInt();
                     y = read2.nextInt();
                     System.out.println(add(x, y));
                     break;
                 case 2:
-                    System.out.println("Podaj dwie liczby: ");
+                    System.out.println("Type two numbers: ");
                     x = read1.nextInt();
                     y = read2.nextInt();
                     System.out.println(substract(x, y));
                     break;
                 case 3:
-                    System.out.println("Podaj dwie liczby: ");
+                    System.out.println("Type two numbers: ");
                     x = read1.nextInt();
                     y = read2.nextInt();
                     System.out.println(multiply(x, y));
                     break;
                 case 4:
-                    System.out.println("Podaj dwie liczby: ");
+                    System.out.println("Type two numbers: ");
                     x = read1.nextInt();
                     y = read2.nextInt();
                     System.out.println(divide(x, y));
                     break;
                 case 5:
-                    System.out.println("Podaj dwie liczby: ");
+                    System.out.println("Type two numbers: ");
                     x = read1.nextInt();
                     y = read2.nextInt();
                     System.out.println(power(x, y));
