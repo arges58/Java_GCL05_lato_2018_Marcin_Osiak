@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<tr th:each="picture:${pictureList}">
+
+
+    <img th:src="${picture.getAll2()}"/><br>
+
+
+    <th>Name:</th>
+    <td><span th:text="${picture.getName()}"></span></td><br>
+    <th>Resolution:</th>
+    <td><span th:text="${picture.getResolution()}"></span></td><br>
+    <th>Size:</th>
+    <td><span th:text="${picture.getSize()}"></span></td><br>
+    <th>Date:</th>
+    <td><span th:text="${picture.getDate()}"></span></td><br>
+
+
+</tr>
+
+
+
+</body>
+</html>
